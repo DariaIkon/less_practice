@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Practice_09</title>
+    <link rel="stylesheet/less" href="./less/main.less">
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header_container">
+            <div id="burger_menu">
+                <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                    <path
+                        d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+                    <path
+                        d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" />
+                </svg>
+            </div>
+            <div class="logo">
+                <img src="./images/header/pizza.png" alt="">
+                <span>PIZZA CHEFF</span>
+            </div>
+            <div id="header_menu_list">
+                <svg id="header_close" height="329pt" viewBox="0 0 329.26933 329" width="329pt"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
+                </svg>
+                <a href="#" class="header_menu_item hvr-shrink">
+                    Пиццы
+                </a>
+                <a href="#" class="header_menu_item hvr-shrink">
+                    Напитки
+                </a>
+                <a href="#" class="header_menu_item hvr-shrink">
+                    Доставка и оплата
+                </a>
+                <a href="#" class="header_menu_item hvr-shrink">
+                    Контакты
+                </a>
+            </div>
+            <div id="header_basket" class="hvr-grow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px"
+                    height="36px">
+                    <image opacity="0.71" x="0px" y="0px" width="40px" height="36px"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAMAAADM4ogkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABtlBMVEXrxYXrxoXsxobrxobrxYXsxobrxoXrxYXrxoXrxoXrxYXrxoXrxYXrxoXrxoXrxoXrxoXrxYXrxYXrxYXrxoXrxoXrxYXrxoXrxYXsxobrxYXsxobrxoXrxoXrxoXrxoXrxoXrxoXrxoXrxYXrxoXrxYXrxoXrxoXrxoXrxoXrxoXsxobrxoXrxoXrxoXrxoXrxYXrxoXsxobsxobrxoXrxoXrxYXrxoXrxYXsxobrxoXrxYXrxoXrxobrxoXrxYXrxYXrxoXrxoXrxYXrxoXrxYXrxYXrxoXrxYXrxoXrxoXrxYXrxYXrxYXsxobrxoXrxYXrxoXrxYXsxobrxoXrxYXrxoXrxoXsxobsxobrxYXrxYXrxoXrxoXrxYXrxYXrxoXrxoXrxYXsxobrxoXrxYXsxobrxoXrxoXrxoXrxoXrxoXrxoXrxYXrxoXrxoXrxoXrxYXsxobrxoXrxoXrxYXrxoXrxYXrxoXrxYXrxoXrxYXrxoXrxYXrxoXrxoXrxoXrxYXrxYXrxYXrxYXrxoXrxoXrxYXrxoXrxYXrxYXrxYXrxYXrxYXsxobrxoXrxoX///+RcY9IAAAAkXRSTlMAAAAAT6GpqKiWI7W1eX+GLzVvkjehOrAttTw8PD04Ax+KDrIBpJOUZoV2sQmJVGVEOTSzCyeLHFwStDgFtZmXikZ9tK+flYyCd2thV0tBKm2xgIh+dGleVEg+MyskHRUHQTAEXDk5NRY6bQRVkXWqrK6urq2sYQoMDAqQpAE+dAgvcqUENm6DjxtYqSiZrJ4zDhr2VwAAAAFiS0dEkQ8NvpoAAAAHdElNRQflCRcVDzdvS/WdAAACmklEQVQ4y01Uh19TQQzOHSho4kARvEdFrQvcdaE4EffGvUWlLhxFqVIV995/spdxr32/662k+ZIvyUHzlKktrdOmgwPwcXJxlcnx3skO+AqQP5oBqqAykzvVlh3AzKiGOAu8V01wXrW9d8my4sxum4M414CcVwkky2kS9HaiefH/kF86tpqQXXLdQQdSp4cEU0fj+MQVCw3mB6LmLOvKCllWKOjEi66Frixb0L2Q/7uIw0EiQtsEwqD7eFDBYrZaXIJRJmcWYf4P1tEDIXuxdBnvzGT6VGy6hMvZV79CoYKJSfaCimn0CGO9+YXaMVSkBI/YJqlcqQBBjVFdGQUpfqtWC3E9QbFCvGf8IMKg2iJbo4WxttF384391JmP6zSv640Yymljs2IflbSSZMdvCKqJaWF31bLwSxs3aRY3E2EeNKasUE4sbrG66LMUmMF0knBkbOX6jGNbP9ZZQ0y864+J2M4u+ia3o9UKYGdOC6qbylN/0YoQdiVe0MhLYSjG7rzj9oTGBDI1FofwhANgDeX2YsB6hiPq4L6p+w8cPHT4yNFjx0+czNvSnyIcOn3m7LnzFy5eunzl6rXrN4rDDCeN5J12Ns83EYduyV660BpWm78+4tXtzujUSLm9u3ynVC6VecSvVOq4ey9vTm3M+w2RpKKWq8EHo9rTUuFR/SHlvGhJpN7AR+Aa2tg9TnXzpDI29vTZ2Hh13PKJI2pSVfvI6o+ev5io1WoTtZevxGS0/HoyFpi3J+4NWeHhW3vIoCVo1sPQO+9SCuF9qjP6YE/k5EdFoFD9lN7EuI6OS7FG0WeNEZq+BHkxiL7yhZfnKuoOUJBW/gYpC8VBq4nvoI+b5BH8j5/VSqXaO5yyA+7X70ql8ufvP3X6P/W5X/uyyLKVAAAAAElFTkSuQmCC" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main_container">
+            <div id="main_info">
+                <h1>
+                    Самая вкусная пицца в мире
+                    <span>только в Pizza Cheff</span>
+                </h1>
+                <div id="advantages">
+                    <div class="advantage">
+                        <div class="advantage_img">
+                            <img src="./images/main/hop.png" alt="">
+                        </div>
+                        <div class="advantage_info">
+                            <div class="advantage_title">Лучшее тесто</div>
+                            <div class="advantage_text">
+                                Мы создаем тесто только из отборной итальянской муки
+                                наивысшего качества
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage_img">
+                            <img src="./images/main/kitchen-pack.png" alt="">
+                        </div>
+                        <div class="advantage_info">
+                            <div class="advantage_title">лучшие повара</div>
+                            <div class="advantage_text">
+                                Пиццы готовят самые профессиональные итальянские
+                                повара
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage_img">
+                            <img src="./images/main/seo-and-web.png" alt="">
+                        </div>
+                        <div class="advantage_info">
+                            <div class="advantage_title">гарантия качества</div>
+                            <div class="advantage_text">
+                                Наша пиццерия получила множество наград и признаний
+                                по всему миру
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage_img">
+                            <img src="./images/main/holidays.png" alt="">
+                        </div>
+                        <div class="advantage_info">
+                            <div class="advantage_title">отборные рецепты</div>
+                            <div class="advantage_text">
+                                Мы используем рецепты от мировых лидеров
+                                в изготовлении пиццы
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="advantage_button">
+                    <a href="#" class="btn hvr-bounce-to-left">Выбрать пиццу</a>
+                </div>
+            </div>
+            <div id="main_img">
+                <img src="./images/main/pizza_big.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="products">
+        <div id="products_container">
+            <div id="products_title">Выберите свою любимую пиццу</div>
+            <div id="products_list">
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/Meat_DeLuxe.png"> <img
+                                src="./images/products/Meat_DeLuxe.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Мясная Делюкс
+                    </div>
+                    <div class="div products_item_desription">
+                        Пепперони, лук, бекон, томатная паста, колбаски, перец,
+                        грибы, соус чили, ананасы
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/Marine_Premium.png"><img
+                                src="./images/products/Marine_Premium.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Морская Премиум
+                    </div>
+                    <div class="div products_item_desription">
+                        Перец, сыр, креветки, кальмары, мидии, лосось
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/Bacon_Sausages.png"><img
+                                src="./images/products/Bacon_Sausages.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Бекон и Сосиски
+                    </div>
+                    <div class="div products_item_desription">
+                        Бекон, сыр, сосиски, ананас, томатная паста
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/Chicken_DeLuxe.png"><img
+                                src="./images/products/Chicken_DeLuxe.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Куриная Делюкс
+                    </div>
+                    <div class="div products_item_desription">
+                        Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/BBQ_Premium.png"><img
+                                src="./images/products/BBQ_Premium.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Барбекю Премиум
+                    </div>
+                    <div class="div products_item_desription">
+                        Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы,
+                        соус чили
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/Pepperoni double.png"><img
+                                src="./images/products/Pepperoni double.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Пепперони Дабл
+                    </div>
+                    <div class="div products_item_desription">
+                        Пепперони, сыр, колбаса 2 видов: обжаренная и вареная
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/Chicken_Trio.png"><img
+                                src="./images/products/Chicken_Trio.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Куриное трио
+                    </div>
+                    <div class="div products_item_desription">
+                        Жареная курица, Тушеная курица, Куриные наггетсы,
+                        перец, сыр, грибы, соус для пиццы
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+                <div class="products_item">
+                    <div class="products_item_img">
+                        <a  href="./images/products/Cheese.png"><img
+                                src="./images/products/Cheese.png" alt=""></a>
+                    </div>
+                    <div class="products_item_title">
+                        Сырная
+                    </div>
+                    <div class="div products_item_desription">
+                        Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный
+                    </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="order">
+        <div id="order_container">
+            <div id="order_info">
+                <div id="order_info_title">
+                    <span>Хватит думать!</span> Доставим заказ за 30 минут!
+                </div>
+                <div id="order_info_text">
+                    Мы гарантированно доставим вашу пиццу за 30 минут с момента
+                    оформления заказа. Если мы опоздаем на 1 минуту - вы получаете
+                    весь заказ бепслатно и ваучер на скидку на следующий заказ.
+                    Мы гордимся нашим сервисом и сделаем все, чтобы наш клиент был
+                    доволен и не остался голодный!
+                </div>
+            </div>
+            <div id="order_form">
+                <form action="">
+                    <div class="order_input_wrapper">
+                        <input type="text" placeholder="Ваше имя" id="order_input_name" class="order_form_control">
+                        <div class="order_input_error">
+                            "Необходимо ввести Ваше имя"
+                        </div>
+                    </div>
+                    <div class="order_input_wrapper">
+                        <input type="text" placeholder="Адрес доставки" id="order_input_address" class="order_form_control">
+                        <div class="order_input_error">
+                            "Необходимо ввести адрес доставки"
+                        </div>
+                    </div>
+                    <div class="order_input_wrapper">
+                        <input type="text" placeholder="Телефон" id="order_input_phone" class="order_form_control">
+                        <div class="order_input_error">
+                            "Необходимо ввести Ваш телефон"
+                        </div>
+                    </div>
+                    <button type="button" class="btn" id="order_form__button">Оформить заказ</button>
+                </form>
+            </div>
+            <div id="order_form_success">
+                <p id="order_form_success_text">"Спасибо за Ваш заказ.</br>Мы скоро свяжемся с Вами!"</p>
+            </div>
+            <div id="order_img">
+                <img src="./images/order/order_pizzzzza.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_container">
+            <div class="logo">
+                <img src="./images/header/pizza.png" alt="">
+                <span>PIZZA CHEFF</span>
+            </div>
+            <div id="footer_rights">
+                Все права защищены, 2020
+            </div>
+        </div>
+    </div>
+    <div id="loader">
+        <div class="lds-hourglass"></div>
+    </div>
+    <div id="coockie">
+        <div id="coockie_title_wrapper">
+            <p id="coockie_title">Мы используем файлы coockie</p>
+            <span class="coockie_close">
+                &times;
+            </span>
+        </div>
+    
+        <p id="coockie_text">
+            Для корректной работы сайта мы используем файлы coockie
+        </p>
+        <button class="btn coockie_close" type="button">Принять</button>
+    </div>
+    
+    <script>
+        document.getElementById('burger_menu').onclick = function () {
+            document.getElementById('header_menu_list').classList.add('open');
+        }
+        document.querySelectorAll('#header_menu_list > *').forEach((item) => {
+            item.onсlick = () => {
+                document.getElementById('header_menu_list').classList.remove('open');
+            }
+        })
+    </script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+
+   
+
+
+</body>
+
+</html>

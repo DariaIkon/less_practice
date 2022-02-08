@@ -1,0 +1,270 @@
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+  /*hedaer*/
+  #header {
+    #header_container {
+      padding-left: 20px;
+      padding-right: 20px;
+      #header_menu_list {
+        margin: 0;
+      }
+    }
+  }
+  /*main*/
+
+  #main_container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #main_img {
+    max-width: 400px;
+  }
+  #main_img img {
+    max-width: 100%;
+  }
+
+  /*products*/
+  #products_container {
+    #products_list {
+      justify-content: center;
+      .products_item {
+        margin: 12px;
+      }
+    }
+  }
+
+  /*order*/
+  #order {
+    #order_container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #order_img {
+      width: 200px;
+    }
+  }
+
+  /*footer*/
+  #footer {
+    #footer_container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+  /* header */
+  header {
+    #header_container {
+      #header_menu_list {
+        width: 420px;
+      }
+    }
+  }
+
+  /* main */
+
+  #main_container {
+    flex-direction: column;
+    padding-top: 70px;
+    #main_info {
+      order: 2;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+  #main_img {
+    margin-bottom: 30px;
+    order: 1;
+  }
+  #advantage_button {
+    text-align: center;
+  }
+
+  /*products*/
+
+  #products_container {
+    padding-top: 70px;
+    #products_list {
+      margin-top: 20px;
+    }
+  }
+
+  /* order */
+  #order {
+    #order_container {
+      padding-top: 50px;
+      padding-bottom: 60px;
+      position: relative;
+      justify-content: center;
+      #order_img {
+        position: absolute;
+        z-index: -1;
+        right: calc(50% - 350px);
+        img {
+          position: static;
+        }
+      }
+      #order_form {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+  /* header */
+  #header {
+    #header_container {
+      justify-content: center;
+      flex-wrap: wrap;
+      #header_menu_list {
+        order: 3;
+        margin-top: 15px;
+        flex-basis: 100%;
+        justify-content: center;
+        .header_menu_item {
+          margin-left: 10px;
+        }
+      }
+    }
+    #header_basket {
+      margin-left: 20px;
+    }
+  }
+
+  /* main  */
+  #main_container {
+    #main_info {
+      h1 {
+        line-height: 30px;
+        font-size: 30px;
+        max-width: 400px;
+      }
+      #advantages {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+    #main_img {
+      display: none;
+    }
+  }
+
+  /* products  */
+  #products_container {
+    #products_title {
+      font-size: 26px;
+    }
+  }
+
+  /* order  */
+  #order {
+    #order_container {
+      flex-wrap: wrap;
+      text-align: center;
+      #order_info {
+        #order_info_title {
+          line-height: 35px;
+        }
+        #order_info_text {
+          margin-top: 25px;
+          margin-bottom: 25px;
+        }
+      }
+      #order_form {
+        margin: 0 14px;
+      }
+    }
+    #order_img {
+      right: calc(50% - 200px);
+    }
+  }
+
+  /* footer */
+  #footer {
+    #footer_container {
+      justify-content: space-between;
+      #footer_rights {
+        margin: 0;
+      }
+    }
+  }
+}
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+  #header {
+    #header_container {
+      #header_menu_list {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        padding-top: 30px;
+        background: #000000de;
+        top: 0;
+        left: 0;
+        .header_menu_item {
+          margin: 15px 5px;
+        }
+        #header_close {
+          display: block;
+          width: 24px;
+          height: 24px;
+          fill: #f9d6a6;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+        }
+      }
+      #burger_menu {
+        display: block;
+        margin-right: 20px;
+        svg {
+          width: 36px;
+          height: 36px;
+          fill: #f9d6a6;
+        }
+      }
+      #header_menu_list.open {
+        display: flex;
+      }
+    }
+  }
+}
+/* 320 - 374 */
+@media screen and (max-width: 374px) {
+  /* order */
+
+  #order {
+    #order_container {
+      #order_info {
+        #order_info_title {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        #order_info_text {
+          margin: 15px auto;
+          max-width: 310px;
+          font-size: 15px;
+        }
+      }
+      #order_form {
+        #order_wrapper {
+          input {
+            max-width: 290px;
+          }
+        }
+      }
+    }
+  }
+  #footer_rights {
+    margin-left: 10px;
+  }
+}
